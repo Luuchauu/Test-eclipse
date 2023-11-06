@@ -107,6 +107,7 @@ public class Cmaera_class{
         BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_3BYTE_BGR);
         final byte[] target = ((DataBufferByte) image.getRaster().getDataBuffer()).getData();
         System.arraycopy(source, 0, target, 0, source.length);
+        System.out.println("coucou");
 
         return image;
     }
